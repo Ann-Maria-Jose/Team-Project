@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Canteen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            background-color: 
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background:  #4CAF50;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .main {
+            padding: 20px;
+            background: #4CAF50;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #ada5a5;
+            box-shadow: 0 0 10px rgba(252, 251, 251, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #a69d9d;
+            border-radius: 5px;
+        }
+        form button {
+            display: inline-block;
+            background: #ff6347;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Contact Us</h1>
+    </div>
+</header>
+
+<div class="container main">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> St. Thomas College (Autonomous), Thrissur, G6F9+9Q8, Keerankulangara, Thrissur, Kerala 680020</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@canteenexample.com</p>
+        <p><strong>Opening Hours:</strong></p>
+        <ul>
+            <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+            <li>Saturday: 8:00 AM - 5:00 PM</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </div>
+
+    <form action="submit_contact_form.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
