@@ -1,2 +1,2 @@
 # Team-Project
-this is a team project
+College Canteen team project
